@@ -1,16 +1,13 @@
-package sessao2;
+package sessao2.Formas;
+
+import sessao2.Formas.Forma;
 
 /**
- * A classe Circulo tem como objetivo criar uma representação
+ * A classe Retangulo tem como objetivo criar uma representação
  * desta forma geométrica.
- * <p>
  * A classe extende a classe Forma que já define as coordenadas
- * dos pontos da forma. Em particular vai ser só definido 1 ponto
- * que representa o centro
- * <p>
- * Adicionalmente considera-se um parâmtro extra que é o raio e que
- * as restantes formas não consideram.
- * <p>
+ * dos pontos da forma.
+ *
  * Associdado à representação dos vértices a classe possibilita
  * o cálculo de:
  * <ul>
@@ -24,10 +21,7 @@ package sessao2;
  * @version 2.0
  * @since 1.0
  */
-public class Circulo extends Forma implements IForma{
-
-
-    private double raio;
+public class Retangulo extends Forma implements IForma{
     /**
     * <p>Construtor que recebe por parâmetros as coordenadas dos vértices do
     * quadrado
@@ -35,31 +29,31 @@ public class Circulo extends Forma implements IForma{
     * @param coordenadaY - representa o conjunto de coordenadas Y dos pontos
     * @since 1.0
     */
-    public Circulo(double[] coordenadaX, double[] coordenadaY, double raio){
-        super( coordenadaX, coordenadaY, "Circulo");
-        this.raio = raio;
+    public Retangulo(double[] coordenadaX, double[] coordenadaY){
+        super( coordenadaX, coordenadaY, "Retangulo");
+        coordenadaX[1] = 10;
     }
 
 
     @Override
     public String toString() {
-        return "Circulo";
+        return "Retangulo ";
     }
 
 
     /**
-    * <p>Método que cálcula o valor do perímetro do quadrado
+    * <p>Método que cálcula o valor do perímetro do retangulo
     * @since 1.0
-    * @return int - valor do perímetro do quadrado
+    * @return int - valor do perímetro do retângulo
     */
     public double perimetro(){
         return 0;
     }
 
     /**
-    * <p>Método que cálcula o valor da área do quadrado
+    * <p>Método que cálcula o valor sa área do retangulo
     * @since 1.0
-    * @return int - valor da área do quadrado
+    * @return int - valor da área do retângulo
     */
     public double area(){
         return 0;
@@ -68,4 +62,3 @@ public class Circulo extends Forma implements IForma{
 
 
 }
-

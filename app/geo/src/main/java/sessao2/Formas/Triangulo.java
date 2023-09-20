@@ -1,6 +1,10 @@
 package sessao2;
+
+import sessao2.Formas.Forma;
+import sessao2.Formas.IForma;
+
 /**
- * A classe Retangulo tem como objetivo criar uma representação
+ * A classe Triangulo tem como objetivo criar uma representação
  * desta forma geométrica.
  * A classe extende a classe Forma que já define as coordenadas
  * dos pontos da forma.
@@ -18,7 +22,8 @@ package sessao2;
  * @version 2.0
  * @since 1.0
  */
-public class Retangulo extends Forma implements IForma{
+public class Triangulo extends Forma implements IForma{
+
     /**
     * <p>Construtor que recebe por parâmetros as coordenadas dos vértices do
     * quadrado
@@ -26,15 +31,15 @@ public class Retangulo extends Forma implements IForma{
     * @param coordenadaY - representa o conjunto de coordenadas Y dos pontos
     * @since 1.0
     */
-    public Retangulo(double[] coordenadaX, double[] coordenadaY){
-        super( coordenadaX, coordenadaY, "Retangulo");
+    public Triangulo(double[] coordenadaX, double[] coordenadaY){
+        super( coordenadaX, coordenadaY, "Triangulo");
         coordenadaX[1] = 10;
     }
 
 
     @Override
     public String toString() {
-        return "Retangulo ";
+        return "Triangulo ";
     }
 
 

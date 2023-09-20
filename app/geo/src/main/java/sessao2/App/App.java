@@ -1,4 +1,10 @@
-package sessao2;
+package sessao2.App;
+
+import sessao2.Formas.Circulo;
+import sessao2.Formas.IForma;
+import sessao2.Formas.Quadrado;
+import sessao2.Formas.Retangulo;
+import sessao2.Formas.Triangulo;
 
 /***
  * A classe App.
@@ -16,7 +22,11 @@ public class App {
     /**
      * Main - Ponto de entrada da aplicação
      */
+
     public static void main(String[] args) {
+
+        char opcao = 'c'; //triangulo
+
 
         //Definição do quadrado
         double[] coorQuadradoX = new double[4];
@@ -64,15 +74,22 @@ public class App {
         coorCirculoY[0] = 0;
         Circulo circulo = new Circulo(coorCirculoX, coorCirculoY, 2);
 
+        switch(opcao){
+            case 'q': App.testaForma(quadrado);
+                      break;
+            case 'r': App.testaForma(retangulo);
+                      break;
+            case 't': App.testaForma(triangulo);
+                      break;
+            case 'c': App.testaForma(circulo);
+                      break;
+            default:
+                System.out.println("opção errada...");
+                break;
+        }
 
-
-        App.testaForma(quadrado);
-        App.testaForma(retangulo);
-        App.testaForma(triangulo);
-        App.testaForma(circulo);
 
     }
-
 
     /**
      * testaForma - Método estático para demonstração de polimorfismo

@@ -1,4 +1,4 @@
-package sessao2;
+package sessao2.Formas;
 
 /**
  * A interface IForma tem como objetivo padronizar o comportamento comum
