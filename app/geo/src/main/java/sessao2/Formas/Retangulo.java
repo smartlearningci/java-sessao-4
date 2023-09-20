@@ -1,6 +1,5 @@
 package sessao2.Formas;
 
-import sessao2.Formas.Forma;
 
 /**
  * A classe Retangulo tem como objetivo criar uma representação
